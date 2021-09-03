@@ -182,6 +182,10 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .about-me .about-content .text .info
+    {
+        display: block;
+    }
     .about-me .about-content .text .info .list p
     {
         margin: 0;
