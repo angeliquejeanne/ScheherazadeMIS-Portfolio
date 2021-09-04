@@ -369,7 +369,6 @@ header .navbar ul li a.active:before
 {
     color: var(--color-primary);
     font-size: 22px;
-    padding: auto;
     margin: 5px auto;
     transition: all .5s ease;
     -webkit-transition: all .5s ease;
@@ -714,7 +713,7 @@ header .navbar ul li a.active:before
 .message-text .text
 {
     flex: 0 0 66.66%;
-    max-width: 0 0 66.66%;
+    max-width: 66.66%;
 }
 .message-text .text h2
 {
@@ -728,7 +727,7 @@ header .navbar ul li a.active:before
 .message-text .button
 {
     flex: 0 0 33.33%;
-    max-width: 0 0 33.33%;
+    max-width: 33.33%;
     text-align: right;
 }
 .message-text .button a
