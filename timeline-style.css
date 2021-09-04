@@ -103,7 +103,7 @@ body {
   background: var(--color-fifth);
 }
 
-.timeline ol li div {
+.timeline ol li h2 {
   position: absolute;
   left: calc(100% + 7px);
   width: 280px;
@@ -114,7 +114,7 @@ body {
   background: var(--color-base);
 }
 
-.timeline ol li div::before {
+.timeline ol li h2::before {
   content: '';
   position: absolute;
   top: 100%;
@@ -124,22 +124,22 @@ body {
   border-style: solid;
 }
 
-.timeline ol li:nth-child(odd) div {
+.timeline ol li:nth-child(odd) h2 {
   top: -16px;
   transform: translateY(-100%);
 }
 
-.timeline ol li:nth-child(odd) div::before {
+.timeline ol li:nth-child(odd) h2::before {
   top: 100%;
   border-width: 8px 8px 0 0;
   border-color: var(--color-base) transparent transparent transparent;
 }
 
-.timeline ol li:nth-child(even) div {
+.timeline ol li:nth-child(even) h2 {
   top: calc(100% + 16px);
 }
 
-.timeline ol li:nth-child(even) div::before {
+.timeline ol li:nth-child(even) h2::before {
   top: -8px;
   border-width: 8px 0 0 8px;
   border-color: transparent transparent transparent var(--color-base);
