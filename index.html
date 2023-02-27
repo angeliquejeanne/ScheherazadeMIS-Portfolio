@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scheherazade MIS - Portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="timeline-style.css">
+    <link rel="stylesheet" href="src/style/index.css">
+    <link rel="stylesheet" href="src/style/responsive.css">
+    <link rel="stylesheet" href="src/style/timeline-style.css">
 </head>
 <body>
 <!--start Home-->
 <header>
     <div class="container">
         <div class="row">
-        <div class="brand-name">
-            <a href="" class="logo">Scheherazade MIS</a>
-        </div>
-        <div class="ham-burger">
-            <i class="fa fa-bars"></i>
-        </div>
+            <div class="brand-name">
+                <a href="" class="logo">Scheherazade MIS</a>
+            </div>
+            
+            <button class="ham-burger" aria-expanded="true">
+                <i class="fa fa-bars"></i>
+            </button>
+
             <div class="navbar">
                 <ul>
                     <li><a href="#home" class="active">Accueil</a></li>
@@ -32,16 +34,17 @@
         </div>
     </div>
 </header>
+
 <section class="home" id="home">
     <div class="container">
         <div class="row full-screen">
             <div class="home-content">
                 <div class="block">
-                    <h6>Bonjour, je me nomme</h6>
+                    <p>Bonjour, je me nomme</p>
                     <h1>Scheherazade</h1>
-                    <h3>Formatrice Consultante Emploi</h3>
-                    <div class="cv-btn">
-                        <a href="">Télécharger mon CV</a>
+                    <h2>Formatrice Consultante Emploi</h2>
+                    <div class="cv_link">
+                        <a href="src/documents/cv COATCH EMPLOI.pdf">Télécharger mon CV</a>
                     </div>
                 </div>
             </div>
@@ -49,6 +52,7 @@
     </div>
 </section>
 <!--END Home-->
+
 <!--start About-->
 <section class="about-me" id="about">
 <div class="container">
@@ -63,8 +67,7 @@
 
             <div class="row">
 
-                <div class="img">
-                    <img src="https://i.pinimg.com/564x/9b/95/c0/9b95c03da125278ffd2268d12fd235f6.jpg" alt="about-me">
+                <div class="about_img">
                 </div>
 
                 <div class="text">
@@ -72,7 +75,7 @@
                     <h4>Je suis Schehezarade MIS</h4>
                     <h6><span>F</span>ormatrice <span>C</span>onsultante <span>E</span>mploi </h6>
                     <p>
-                        Cueillir la personne là où elle est pour l'amener là où elle doit aller.
+                        Acueillir la personne là où elle est pour l'amener là où elle doit aller.
                     </p>
 
                     <div class="info">
@@ -176,8 +179,8 @@
                     </div>
                 </div>
             </div>
-            <div class="img">
-                <img src="https://i.pinimg.com/564x/9b/95/c0/9b95c03da125278ffd2268d12fd235f6.jpg" alt="skill">
+            <div class="skill_img">
+
             </div>
         </div>
     </div>
@@ -199,11 +202,12 @@
                             <i class="fa fa-laptop"></i>
                         </div>
                         <h5>Formatrice</h5>
-                        <p>Accueil des personnes (téléphonique/physique/visio)</p>
+                        <p>Accueil des personnes (téléphonique/physique/visio) dans un cadre professionnel</p>
                         <p>Connaissance du marché du travail de l'emploi et de l'insertion</p>
                         <p>Définir des modalités de collaboration</p>
                         <p>Conception de plan d'action</p>
                         <p>Définir des besoins en matière d'évolution professionnelle</p>
+                        <p>Accompagnée des personnes dans un projet professionnel</p>
                         <p>Action d'orientation professionnelle</p>
                         <p>Définir un projet individuel avec la personne</p>
                         <p>Valoriser l'image professionnelle</p>
@@ -212,13 +216,25 @@
                         <div class="icon">
                             <i class="fa fa-columns"></i>
                         </div>
-                        <h5>Savoir être dans la peau d'un recruteur et les mises en pratique</h5>
-                        <p>Lorem ispum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                        </p>
-
+                        <h5>Transverses</h5>
+                        <p>Réaliser des écrits professionnels</p>
+                        <p>Travailler en équipe, en réseaux et en autonomie</p>
+                        <p>Préparer et animer un atelier</p>
+                        <p>Atelier physique et visio</p>
+                        <p>Analyser sa pratique professionnel</p>
+                        <p>S'adapter rapidement aux différents publiques</p>
+                        <p>Realiser des entretiens individuels</p>
+                        <p>Réaliser des ateliers thématiques</p>
+                        <p>Réaliser un job dating</p>
+                        <p>Respecter les règles de confidentialitées</p>
                     </div>
                     <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-columns"></i>
+                        </div>
+                        <h5>Savoir être dans la peau d'un recruteur et les mises en pratique</h5>
+                        <p>Savoir se présenter</p>
+
                         <div class="icon">
                             <i class="fa fa-columns"></i>
                         </div>
@@ -241,6 +257,7 @@
 </section>
 <!--End Services-->
 <!-- Test de la timeline -->
+<!--
 <section class="timeline" id="timeline">
     <ol>
       <li>
@@ -297,6 +314,7 @@
       </button>
     </div>
   </section>
+-->
 <!-- Fin test de le timeline -->
 <!--portfolio works -->
 <section class="portfolio" id="portfolio">
@@ -308,37 +326,44 @@
         </div>
         <div class="row">
             <div class="filter-buttons">
-                <ul id="filter-btns">
-                    <li class="active" data-target="all">Tout</li>
-                    <li data-target="cuisine">Atelier</li>
-                    <li data-target="accompagnement">Accompagnement</li>
-                    <li data-target="documents">Documents</li>
-                </ul>
+                <!--<ul id="filter-btns" class="filter-btns">
+                    <li class="active btn" active data-target="all">Tout</li>
+                    <li class="btn" data-target="atelier">Atelier</li>
+                    <li class="btn" data-target="accompagnement">Accompagnement</li>
+                    <li class="btn" data-target="documents">Documents</li>
+                </ul>--> 
+                <div id="filter-btns" class="filter-btns">
+                    <button class="btn active" onclick="filterSelection('all')" data-target="all">Tout</button>
+                    <button class="btn" onclick="filterSelection('atelier')" data-target="atelier">Atelier</button>
+                    <button class="btn" onclick="filterSelection('accompagnement')" data-target="accompagnement">Accompagnement</button>
+                    <button class="btn" onclick="filterSelection('documents')" data-target="documents">Documents</button>
+                </div>
             </div>
+            
         </div>
         <div class="row">
             <div class="portfolio-gallery">
-                <div class="item" data-id="cuisine">
-                    <div class="inner">
-                    <img src="./img/20210902_181455.jpg" alt="pêle mêle de photo d'un repas">
-                    <div class="overlay">
-                        <span class="fa fa-plus"></span>
-                        <h4>Pêle mêle de photo d'un repas partie 1</h4>
-                    </div>
+                <div class="column atelier item" data-id="atelier">
+                    <div class="content inner">
+                        <img src="src/img/20210902_181455.jpg" alt="pêle mêle de photo d'un repas">
+                        <div class="overlay">
+                            <span class="fa fa-plus"></span>
+                            <h4>Pêle mêle de photo d'un repas partie 1</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="item" data-id="cuisine">
-                    <div class="inner">
-                    <img src="./img/20210902_181501.jpg" alt="pêle mêle de photo d'un repas">
+                <div class="column atelier item" data-id="atelier">
+                    <div class="content inner">
+                    <img src="src/img/20210902_181501.jpg" alt="pêle mêle de photo d'un repas">
                     <div class="overlay">
                         <span class="fa fa-plus"></span>
                         <h4>Pêle mêle de photo d'un repas partie 2</h4>
                     </div>
                     </div>
                 </div>
-                <div class="item" data-id="cuisine">
-                    <div class="inner">
-                    <img src="./img/20210902_181611.jpg" alt="remerciements pour la réalisation d'un atelier">
+                <div class="column atelier item" data-id="atelier">
+                    <div class="content inner">
+                    <img src="src/img/20210902_181611.jpg" alt="remerciements pour la réalisation d'un atelier">
                     <div class="overlay">
                         <span class="fa fa-plus"></span>
                         <h4>Remerciements suite à la réalisation de projets</h4>
@@ -346,8 +371,8 @@
                     </div>
                 </div>
                 <div class="item" data-id="accompagnement">
-                    <div class="inner">
-                    <img src="./img/20210902_181013.jpg" alt="Cartographie : Conseillère en insertion professionnel">
+                    <div class="content inner">
+                    <img src="src/img/20210902_181013.jpg" alt="Cartographie : Conseillère en insertion professionnel">
                     <div class="overlay">
                         <span class="fa fa-plus"></span>
                         <h4>Cartographie : Conseillère en insertion professionnel</h4>
@@ -355,8 +380,8 @@
                     </div>
                 </div>
                 <div class="item" data-id="accompagnement">
-                    <div class="inner">
-                    <img src="./img/20210902_181148.jpg" alt="Relation employeurs">
+                    <div class="content inner">
+                    <img src="src/img/20210902_181148.jpg" alt="Relation employeurs">
                     <div class="overlay">
                         <span class="fa fa-plus"></span>
                         <h4>Relation employeurs</h4>
@@ -364,8 +389,8 @@
                     </div>    
                 </div>
                 <div class="item" data-id="accompagnement">
-                    <div class="inner">
-                    <img src="./img/20210902_181702.jpg" alt="Accompagnement parcours d'insertion social et professionnelle">
+                    <div class="content inner">
+                    <img src="src/img/20210902_181702.jpg" alt="Accompagnement parcours d'insertion social et professionnelle">
                     <div class="overlay">
                         <span class="fa fa-plus"></span>
                         <h4>Accompagnement parcours d'insertion sociale et professionnelle</h4>
@@ -373,8 +398,8 @@
                     </div>
                 </div>
                 <div class="item" data-id="documents">
-                    <div class="inner">
-                    <img src="./img/20210902_180842.jpg" alt="Journée de la descrimination">
+                    <div class="content inner">
+                    <img src="src/img/20210902_180842.jpg" alt="Journée de la descrimination">
                     <div class="overlay">
                         <span class="fa fa-plus"></span>
                         <h4>Journée de la descrimination</h4>
@@ -382,8 +407,8 @@
                     </div>    
                 </div>
                 <div class="item" data-id="documents">
-                    <div class="inner">
-                    <img src="./img/20210902_181344.jpg" alt="Les 5 sens, les 5 B">
+                    <div class="content inner">
+                    <img src="src/img/20210902_181344.jpg" alt="Les 5 sens, les 5 B">
                     <div class="overlay">
                         <span class="fa fa-plus"></span>
                         <h4>Les 5 sens, les 5 B</h4>
@@ -391,8 +416,8 @@
                     </div>
                 </div>
                 <div class="item" data-id="documents">
-                    <div class="inner">
-                    <img src="./img/20210902_180929.jpg" alt="Le sport quel pied!!!">
+                    <div class="content inner">
+                    <img src="src/img/20210902_180929.jpg" alt="Le sport quel pied!!!">
                     <div class="overlay">
                         <span class="fa fa-plus"></span>
                         <h4>Le sport quel pied!!!</h4>
@@ -400,11 +425,20 @@
                     </div>
                 </div>
                 <div class="item" data-id="documents">
-                    <div class="inner">
-                    <img src="./img/20210902_182008.jpg" alt="Lettre de recommandations">
+                    <div class="content inner">
+                    <img src="src/img/20210902_182008.jpg" alt="Lettre de recommandations">
                     <div class="overlay">
                         <span class="fa fa-plus"></span>
                         <h4>ALFA Association de Libercourt, lettre de recommandations</h4>
+                    </div>
+                    </div>
+                </div>
+                <div class="column atelier item" data-id="atelier">
+                    <div class="content inner">
+                    <img src="src/img/20230221_170348.jpeg" alt="Planning de la valorisation de l'image professionnel">
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h4>Planning de la valorisation de l'image professionnel</h4>
                     </div>
                     </div>
                 </div>
@@ -564,10 +598,15 @@
 <div class="lightbox hide">
     <span class="close-lightbox fa fa-close"></span>
     <img src="img/4cb64.jpg" alt="portfolio">
-    <h4>Branding</h4>
+    
 </div>
 <!-- Lightbox end -->
-<script src="index.js"></script>
-<script src="timeline.js"></script>
+<script src="src/script/header-fixed.js"></script>
+<script src="src/script/portfolio-lightbox.js"></script>
+<script src="src/script/gallery.js"></script>
+<script src="src/script/testimonial-slider.js"></script>
+<script src="src/script/timeline.js"></script>
+<script src="src/script/burger-menu.js"></script>
+
 </body>
 </html>
